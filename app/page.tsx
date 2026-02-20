@@ -18,15 +18,16 @@ const Home = () => {
 
       <main>
         <Hero />
-        <Testimonials />
+        {/* <Testimonials /> */}
 
-        <Work />
+        {/* once testimonials are added, move work up and services down */}
         <Services />
+        <Work />
 
         <Process />
         <About />
 
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
       </main>
 

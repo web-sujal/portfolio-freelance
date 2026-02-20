@@ -1,3 +1,7 @@
+/**
+ * Portfolio content and copy. Icons are rendered by components (@/components/icons).
+ */
+
 export const site = {
   name: "Web Sujal",
   tagline: "SaaS MVP & Performance Engineer",
@@ -23,14 +27,6 @@ export const hero = {
   ctaPrimary: "Start Project",
   ctaSecondary: "View Case Studies",
   techLabel: "Tech Stack",
-  tech: [
-    { name: "TypeScript", icon: "ph-fill ph-file-ts", title: "TypeScript" },
-    { name: "React/Next.js", icon: "ph-bold ph-atom", title: "React/Next.js" },
-    { name: "Node.js", icon: "ph-fill ph-node", title: "Node.js" },
-    { name: "MongoDB", icon: "ph-fill ph-database", title: "MongoDB" },
-    { name: "Tailwind", icon: "ph-fill ph-wind", title: "Tailwind" },
-    { name: "Azure/Cloudinary", icon: "ph-bold ph-cloud", title: "Azure/Cloudinary" },
-  ],
 } as const;
 
 export const testimonials = {
@@ -154,7 +150,6 @@ export const caseStudies = [
 export const services = {
   title: "How I help you win",
   mvp: {
-    icon: "ph-duotone ph-rocket-launch",
     title: "SaaS MVP Development (0 → 1)",
     description:
       "I take your idea from concept to production-ready MVP. Clean architecture, secure payments, admin workflows — built to survive real users, not just demos.",
@@ -167,7 +162,6 @@ export const services = {
     borderHover: "hover:border-indigo-500/50",
   },
   performance: {
-    icon: "ph-duotone ph-lightning",
     title: "Performance & Cost Optimization",
     description:
       "Slow apps and bloated infrastructure kill margins. I optimize performance and reduce operational cost without breaking UX.",
@@ -179,7 +173,6 @@ export const services = {
     borderHover: "hover:border-purple-500/50",
   },
   backend: {
-    icon: "ph-duotone ph-server",
     title: "Backend Systems & Payment Safety",
     description:
       "I build backend systems that protect revenue — preventing double charges, overselling, and data corruption.",
@@ -287,13 +280,12 @@ export const contact = {
   description:
     "I'm currently booking projects for next month. Let's chat about your idea and see if we're a good fit.",
   ctaPrimary: "Book Free Consultation",
-  ctaEmail: "web.sujal@gmail.com",
   footnote: "Technical feasibility chat. No sales pressure.",
 } as const;
 
 export const footerLinks = [
   { href: "#services", label: "Services" },
   { href: "#work", label: "Work" },
-  { href: "#", label: "Twitter" },
-  { href: "#", label: "LinkedIn" },
+  { href: "https://github.com/web-sujal/", label: "GitHub" },
+  { href: "https://www.linkedin.com/in/web-sujal", label: "LinkedIn" },
 ] as const;

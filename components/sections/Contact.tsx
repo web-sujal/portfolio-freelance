@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { contact } from "@/lib/data";
+import { contact, site } from "@/lib/data";
 import { CalendarCheckIcon } from "@/components/icons";
 
 export function Contact() {
@@ -24,10 +24,10 @@ export function Contact() {
             />
           </Link>
           <a
-            href={`mailto:${contact.ctaEmail}`}
+            href={`mailto:${site.email}`}
             className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-xl text-lg transition-all flex items-center justify-center gap-2"
           >
-            {contact.ctaEmail}
+            {site.email}
           </a>
         </div>
 
