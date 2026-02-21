@@ -33,7 +33,11 @@ export default function Nav() {
           href="#"
           className="flex items-center gap-2 sm:gap-3 group min-w-0"
           aria-label={`${site.name} home`}
-          onClick={close}
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            close();
+          }}
         >
           <div className="w-9 h-9 shrink-0 bg-indigo-500/10 border border-indigo-500/20 rounded-lg flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
             <TerminalWindowIcon weight="bold" className="text-lg" aria-hidden />
