@@ -99,27 +99,29 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
           </span>
           <span className="text-slate-500 text-sm font-mono">{study.year}</span>
         </div>
-        <h3 className="text-3xl font-bold text-white mb-4">{study.title}</h3>
+        <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+          {study.title}
+        </h3>
         <p className="text-slate-400 leading-relaxed">{study.description}</p>
       </div>
 
       <div className="bg-[#151b2b] rounded-xl p-6 border border-white/5 space-y-4">
-        <div className="grid grid-cols-[80px_1fr] gap-4">
-          <span className="text-xs font-bold text-slate-500 uppercase tracking-wider pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-[80px_1fr] gap-2 sm:gap-4">
+          <span className="text-xs font-bold text-slate-500 uppercase tracking-wider pt-1 sm:pt-1">
             Challenge
           </span>
           <span className="text-sm text-slate-300">{study.challenge}</span>
         </div>
         <div className="h-px bg-white/5" />
-        <div className="grid grid-cols-[80px_1fr] gap-4">
-          <span className="text-xs font-bold text-slate-500 uppercase tracking-wider pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-[80px_1fr] gap-2 sm:gap-4">
+          <span className="text-xs font-bold text-slate-500 uppercase tracking-wider pt-1 sm:pt-1">
             Solution
           </span>
           <span className="text-sm text-slate-300">{study.solution}</span>
         </div>
         <div className="h-px bg-white/5" />
-        <div className="grid grid-cols-[80px_1fr] gap-4">
-          <span className="text-xs font-bold text-emerald-500 uppercase tracking-wider pt-1">
+        <div className="grid grid-cols-1 sm:grid-cols-[80px_1fr] gap-2 sm:gap-4">
+          <span className="text-xs font-bold text-emerald-500 uppercase tracking-wider pt-1 sm:pt-1">
             Result
           </span>
           <span className="text-sm text-emerald-400 font-bold">

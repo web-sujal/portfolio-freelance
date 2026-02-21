@@ -17,7 +17,7 @@ const Work = () => {
           </div>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-20 sm:space-y-32">
           {caseStudies.map((study) => (
             <CaseStudyCard key={study.id} study={study} />
           ))}

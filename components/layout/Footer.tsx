@@ -15,7 +15,7 @@ const Footer = () => {
           <span className="font-bold text-white">{site.name}</span>
         </div>
 
-        <div className="flex gap-8 text-sm text-slate-400">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 text-sm text-slate-400">
           {footerLinks.map((link) => (
             <Link
               key={link.href + link.label}

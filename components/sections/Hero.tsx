@@ -27,7 +27,7 @@ const Hero = () => {
               {hero.badge}
             </div>
 
-            <h1 className="text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
               <span className="gradient-text">{hero.title.line1}</span>
               <br />
               {hero.title.line2} <br />
@@ -82,7 +82,7 @@ const Hero = () => {
                 {hero.techLabel}
               </p>
 
-              <div className="flex gap-8 text-slate-400">
+              <div className="flex flex-wrap gap-6 sm:gap-8 text-slate-400">
                 <FileTsIcon
                   weight="fill"
                   size={28}

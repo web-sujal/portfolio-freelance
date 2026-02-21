@@ -143,7 +143,7 @@ const Services = () => {
           </div>
 
           {/* CTA */}
-          <div className="md:col-span-2 bg-gradient-to-r from-indigo-900/50 to-purple-900/50 rounded-3xl p-8 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+          <div className="md:col-span-2 bg-gradient-to-r from-indigo-900/50 to-purple-900/50 rounded-3xl p-8 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden text-center md:text-left">
             <div className="absolute inset-0 grid-bg opacity-30" aria-hidden />
 
             <div className="relative z-10">

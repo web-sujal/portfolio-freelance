@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="py-24 border-y border-white/5 bg-[#151b2b]/50">
       <div className="max-w-4xl mx-auto px-6 text-center">
-        <div className="size-48 bg-linear-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-8 p-1">
+        <div className="size-40 sm:size-48 bg-linear-to-br from-indigo-500 to-purple-500 rounded-full mx-auto mb-8 p-1">
           <div className="w-full h-full bg-[#0b0f17] rounded-full flex items-center justify-center overflow-hidden">
             <Image
               src="/sujal-pfp.jpg"

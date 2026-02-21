@@ -35,17 +35,17 @@ const Process = () => {
 
           <div className="space-y-0 relative">
             <div
-              className="absolute left-6 top-6 bottom-6 w-px bg-gradient-to-b from-indigo-500 via-purple-500 to-transparent"
+              className="absolute left-4 sm:left-6 top-6 bottom-6 w-px bg-gradient-to-b from-indigo-500 via-purple-500 to-transparent"
               aria-hidden
             />
 
             {processData.steps.map((step) => (
               <div
                 key={step.number}
-                className="relative pl-20 pb-16 group last:pb-0"
+                className="relative pl-14 sm:pl-20 pb-12 sm:pb-16 group last:pb-0"
               >
                 <div
-                  className={`absolute left-0 top-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg z-10 transition-transform group-hover:scale-110 ${
+                  className={`absolute left-0 top-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center font-bold text-base sm:text-lg z-10 transition-transform group-hover:scale-110 ${
                     step.active
                       ? "bg-[#0b0f17] border border-indigo-500 text-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.3)]"
                       : "bg-[#0b0f17] border border-slate-700 text-slate-400 group-hover:border-indigo-500 group-hover:text-indigo-500 group-hover:shadow-[0_0_15px_rgba(99,102,241,0.3)]"

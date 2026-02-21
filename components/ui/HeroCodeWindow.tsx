@@ -20,9 +20,9 @@ export function HeroCodeWindow() {
           </div>
           <div className="text-slate-300">
             <p>
-              <span className="text-purple-400">import</span> {"{"}
+              <span className="text-purple-400">import</span> {"{ "}
               <span className="text-red-400">Ship</span>
-              {"}"} <span className="text-purple-400">from</span>{" "}
+              {" }"} <span className="text-purple-400">from</span>{" "}
               <span className="text-green-400">&apos;@web-sujal/dev&apos;</span>
               ;
             </p>
@@ -68,7 +68,7 @@ export function HeroCodeWindow() {
       </div>
 
       <div
-        className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-20 -z-10"
+        className="absolute -inset-1 bg-linear-to-r from-indigo-500 to-purple-500 rounded-2xl blur opacity-20 -z-10"
         aria-hidden
       />
     </div>
