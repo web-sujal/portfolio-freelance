@@ -2,11 +2,12 @@ import Link from "next/link";
 
 import { contact, site } from "@/lib/data";
 import { CalendarCheckIcon } from "@/components/icons";
+import { FadeInView } from "@/components/motion/FadeInView";
 
 const Contact = () => {
   return (
     <section id="contact" className="py-32 relative">
-      <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
+      <FadeInView className="max-w-3xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
           {contact.title}
         </h2>
@@ -35,7 +36,7 @@ const Contact = () => {
         </div>
 
         <p className="mt-8 text-sm text-slate-500">{contact.footnote}</p>
-      </div>
+      </FadeInView>
     </section>
   );
 };
