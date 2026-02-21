@@ -22,3 +22,10 @@ export const fadeIn = {
 
 /** Stagger delays for hero — fast, not flashy */
 export const heroStagger = { delayChildren: 0.08, staggerChildren: 0.07 } as const;
+
+/** Smooth spring for footer / pop-up — longer, smooth (not bouncy) */
+export const springSmooth = {
+  type: "spring" as const,
+  stiffness: 55,
+  damping: 22,
+};
