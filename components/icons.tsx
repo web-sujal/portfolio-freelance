@@ -5,6 +5,7 @@
  * Weights: "thin" | "light" | "regular" | "bold" | "fill" | "duotone"
  */
 import {
+  DownloadIcon,
   TerminalWindowIcon,
   ArrowRightIcon,
   ListIcon,
@@ -29,6 +30,7 @@ import {
 } from "@phosphor-icons/react";
 
 export {
+  DownloadIcon,
   TerminalWindowIcon,
   ArrowRightIcon,
   ListIcon,

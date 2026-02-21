@@ -5,8 +5,8 @@ import {
   CloudIcon,
   DatabaseIcon,
   FileTsIcon,
-  PackageIcon,
   WindIcon,
+  DownloadIcon,
 } from "@/components/icons";
 import { HeroCodeWindow } from "@/components/ui/HeroCodeWindow";
 import { hero } from "@/lib/data";
@@ -67,6 +67,13 @@ const Hero = () => {
                 className="h-14 px-8 rounded-xl bg-white/5 border border-white/10 text-white font-medium flex items-center justify-center hover:bg-white/10 transition-colors backdrop-blur-sm"
               >
                 {hero.ctaSecondary}
+              </Link>
+            </div>
+
+            <div className="flex justify-start items-center gap-x-4 cursor-pointer text-sm text-slate-300 hover:text-white transition-colors">
+              <span className="">Download Resume</span>
+              <Link href="/sujal-resume.pdf" download>
+                <DownloadIcon size={24} />
               </Link>
             </div>
 
