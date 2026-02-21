@@ -1,12 +1,13 @@
 import Link from "next/link";
-import { blog } from "@/lib/data";
+
 import {
   ArrowRightIcon,
-  ClockIcon,
   ArrowUpRightIcon,
+  ClockIcon,
 } from "@/components/icons";
+import { blog } from "@/lib/data";
 
-export function Blog() {
+const Blog = () => {
   return (
     <section
       id="blog"
@@ -18,11 +19,14 @@ export function Blog() {
             <span className="text-indigo-400 font-mono text-sm tracking-wider uppercase mb-2 block">
               {blog.label}
             </span>
+
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               {blog.title}
             </h2>
           </div>
+
           <div className="h-px flex-1 bg-white/5 hidden md:block mx-12 mb-4" />
+
           <Link
             href="#"
             className="group flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
@@ -52,23 +56,28 @@ export function Blog() {
                 >
                   {post.category}
                 </span>
+
                 <div className="flex items-center gap-1.5 text-slate-500 text-xs font-medium">
                   <ClockIcon aria-hidden />
                   <span>{post.readTime}</span>
                 </div>
               </div>
+
               <h3
                 className={`text-xl font-bold text-white mb-4 transition-colors leading-snug ${post.titleHoverClass}`}
               >
                 {post.title}
               </h3>
+
               <p className="text-slate-400 text-sm leading-relaxed mb-8 flex-grow">
                 {post.excerpt}
               </p>
+
               <div className="pt-6 border-t border-white/5 flex items-center justify-between">
                 <span className="text-xs font-mono text-slate-500">
                   {post.date}
                 </span>
+
                 <ArrowUpRightIcon
                   weight="bold"
                   className={`${post.arrowClass} opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0`}
@@ -81,4 +90,6 @@ export function Blog() {
       </div>
     </section>
   );
-}
+};
+
+export default Blog;

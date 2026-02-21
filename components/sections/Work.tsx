@@ -1,7 +1,7 @@
 import { caseStudies } from "@/lib/data";
 import { CaseStudyCard } from "@/components/ui/CaseStudyCard";
 
-export function Work() {
+const Work = () => {
   return (
     <section id="work" className="py-32 bg-[#0b0f17] relative">
       <div className="max-w-7xl mx-auto px-6">
@@ -10,6 +10,7 @@ export function Work() {
             <span className="text-indigo-400 font-mono text-sm tracking-wider uppercase mb-2 block">
               Portfolio
             </span>
+
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               Selected Work
             </h2>
@@ -24,4 +25,6 @@ export function Work() {
       </div>
     </section>
   );
-}
+};
+
+export default Work;

@@ -6,7 +6,7 @@ import {
   ListIcon,
 } from "@/components/icons";
 
-export function Nav() {
+const Nav = () => {
   return (
     <div className="fixed top-6 left-0 w-full z-50 flex justify-center px-4">
       <nav className="nav-glass rounded-full px-6 py-3 w-full max-w-4xl flex items-center justify-between shadow-2xl shadow-black/20">
@@ -18,6 +18,7 @@ export function Nav() {
           <div className="w-9 h-9 bg-indigo-500/10 border border-indigo-500/20 rounded-lg flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
             <TerminalWindowIcon weight="bold" className="text-lg" aria-hidden />
           </div>
+
           <span className="font-bold text-lg tracking-tight text-white">
             <span className="text-indigo-400">Web</span>Sujal
           </span>
@@ -43,6 +44,7 @@ export function Nav() {
             <span>Book Call</span>
             <ArrowRightIcon weight="bold" aria-hidden />
           </Link>
+
           <button
             type="button"
             className="md:hidden text-white p-2"
@@ -54,4 +56,6 @@ export function Nav() {
       </nav>
     </div>
   );
-}
+};
+
+export default Nav;

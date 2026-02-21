@@ -1,7 +1,7 @@
 import { about } from "@/lib/data";
 import { UserIcon } from "@/components/icons";
 
-export function About() {
+const About = () => {
   return (
     <section className="py-24 border-y border-white/5 bg-[#151b2b]/50">
       <div className="max-w-4xl mx-auto px-6 text-center">
@@ -14,11 +14,15 @@ export function About() {
             />
           </div>
         </div>
+
         <h2 className="text-2xl font-bold text-white mb-6">{about.quote}</h2>
+
         <div className="text-slate-400 leading-relaxed max-w-2xl mx-auto space-y-4">
           <p>{about.body}</p>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default About;

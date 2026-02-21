@@ -1,16 +1,17 @@
 import Link from "next/link";
-import { hero } from "@/lib/data";
-import { HeroCodeWindow } from "@/components/ui/HeroCodeWindow";
-import {
-  FileTsIcon,
-  AtomIcon,
-  PackageIcon,
-  DatabaseIcon,
-  WindIcon,
-  CloudIcon,
-} from "@/components/icons";
 
-export function Hero() {
+import {
+  AtomIcon,
+  CloudIcon,
+  DatabaseIcon,
+  FileTsIcon,
+  PackageIcon,
+  WindIcon,
+} from "@/components/icons";
+import { HeroCodeWindow } from "@/components/ui/HeroCodeWindow";
+import { hero } from "@/lib/data";
+
+const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-32 pb-20">
       <div className="absolute inset-0 grid-bg -z-10" aria-hidden />
@@ -60,6 +61,7 @@ export function Hero() {
               >
                 {hero.ctaPrimary}
               </Link>
+
               <Link
                 href="#work"
                 className="h-14 px-8 rounded-xl bg-white/5 border border-white/10 text-white font-medium flex items-center justify-center hover:bg-white/10 transition-colors backdrop-blur-sm"
@@ -72,6 +74,7 @@ export function Hero() {
               <p className="text-xs font-mono text-slate-500 uppercase tracking-widest">
                 {hero.techLabel}
               </p>
+
               <div className="flex gap-8 text-slate-400">
                 <FileTsIcon
                   weight="fill"
@@ -79,30 +82,35 @@ export function Hero() {
                   className="hover:text-white transition-colors"
                   aria-label="TypeScript"
                 />
+
                 <AtomIcon
                   weight="bold"
                   size={28}
                   className="hover:text-cyan-400 transition-colors"
                   aria-label="React/Next.js"
                 />
+
                 <PackageIcon
                   weight="fill"
                   size={28}
                   className="hover:text-green-400 transition-colors"
                   aria-label="Node.js"
                 />
+
                 <DatabaseIcon
                   weight="fill"
                   size={28}
                   className="hover:text-emerald-400 transition-colors"
                   aria-label="MongoDB"
                 />
+
                 <WindIcon
                   weight="fill"
                   size={28}
                   className="hover:text-sky-400 transition-colors"
                   aria-label="Tailwind"
                 />
+
                 <CloudIcon
                   weight="bold"
                   size={28}
@@ -120,4 +128,6 @@ export function Hero() {
       </div>
     </section>
   );
-}
+};
+
+export default Hero;

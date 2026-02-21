@@ -1,8 +1,9 @@
 import Link from "next/link";
+
 import { process as processData } from "@/lib/data";
 import { ArrowRightIcon } from "@/components/icons";
 
-export function Process() {
+const Process = () => {
   return (
     <section id="process" className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 grid-bg opacity-30 -z-10" aria-hidden />
@@ -16,6 +17,7 @@ export function Process() {
                 <br />
                 Iterative Process.
               </h2>
+
               <p className="text-lg text-slate-400 font-normal mt-4 max-w-sm">
                 {processData.subtitle}
               </p>
@@ -51,9 +53,11 @@ export function Process() {
                 >
                   {step.number}
                 </div>
+
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">
                   {step.title}
                 </h3>
+
                 <p className="text-slate-400 leading-relaxed">
                   {step.description}
                 </p>
@@ -64,4 +68,6 @@ export function Process() {
       </div>
     </section>
   );
-}
+};
+
+export default Process;

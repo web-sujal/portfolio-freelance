@@ -1,14 +1,16 @@
 import Link from "next/link";
+
 import { contact, site } from "@/lib/data";
 import { CalendarCheckIcon } from "@/components/icons";
 
-export function Contact() {
+const Contact = () => {
   return (
     <section id="contact" className="py-32 relative">
       <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
           {contact.title}
         </h2>
+
         <p className="text-xl text-slate-400 mb-12">{contact.description}</p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -23,6 +25,7 @@ export function Contact() {
               aria-hidden
             />
           </Link>
+
           <a
             href={`mailto:${site.email}`}
             className="w-full sm:w-auto px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-xl text-lg transition-all flex items-center justify-center gap-2"
@@ -35,4 +38,6 @@ export function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default Contact;
