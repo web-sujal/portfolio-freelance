@@ -284,8 +284,8 @@ export const contact = {
 } as const;
 
 export const footerLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Work" },
-  { href: "https://github.com/web-sujal/", label: "GitHub" },
-  { href: "https://www.linkedin.com/in/web-sujal", label: "LinkedIn" },
+  { href: "#services", label: "Services", target: undefined, rel: undefined },
+  { href: "#work", label: "Work", target: undefined, rel: undefined },
+  { href: "https://github.com/web-sujal/", label: "GitHub", target: "_blank", rel: "noopener noreferrer" },
+  { href: "https://www.linkedin.com/in/web-sujal", label: "LinkedIn", target: "_blank", rel: "noopener noreferrer" },
 ] as const;

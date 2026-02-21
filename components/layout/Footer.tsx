@@ -21,6 +21,8 @@ const Footer = () => {
               key={link.href + link.label}
               href={link.href}
               className="hover:text-indigo-400 transition-colors"
+              target={link.target}
+              rel={link.rel}
             >
               {link.label}
             </Link>

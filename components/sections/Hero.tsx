@@ -90,13 +90,6 @@ const Hero = () => {
                   aria-label="React/Next.js"
                 />
 
-                <PackageIcon
-                  weight="fill"
-                  size={28}
-                  className="hover:text-green-400 transition-colors"
-                  aria-label="Node.js"
-                />
-
                 <DatabaseIcon
                   weight="fill"
                   size={28}
