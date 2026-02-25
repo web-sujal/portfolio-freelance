@@ -280,6 +280,8 @@ export const contact = {
   description:
     "I'm currently booking projects for next month. Let's chat about your idea and see if we're a good fit.",
   ctaPrimary: "Book Free Consultation",
+  calendlyUrl:
+    "https://calendly.com/web-sujal/30min?hide_event_type_details=1&primary_color=4f46e5",
   footnote: "Technical feasibility chat. No sales pressure.",
 } as const;
 

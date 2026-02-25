@@ -1,10 +1,16 @@
-import Link from "next/link";
+"use client";
 
 import { contact, site } from "@/lib/data";
 import { CalendarCheckIcon } from "@/components/icons";
 import { FadeInView } from "@/components/motion/FadeInView";
 
 const Contact = () => {
+  const openCalendly = () => {
+    if (typeof window !== "undefined" && window.Calendly) {
+      window.Calendly.initPopupWidget({ url: contact.calendlyUrl });
+    }
+  };
+
   return (
     <section id="contact" className="py-32 relative">
       <FadeInView className="max-w-3xl mx-auto px-6 text-center relative z-10">
@@ -15,8 +21,9 @@ const Contact = () => {
         <p className="text-xl text-slate-400 mb-12">{contact.description}</p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <Link
-            href="#"
+          <button
+            type="button"
+            onClick={openCalendly}
             className="w-full sm:w-auto px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-lg transition-all shadow-lg shadow-indigo-500/25 flex items-center justify-center gap-2 group"
           >
             {contact.ctaPrimary}
@@ -25,7 +32,7 @@ const Contact = () => {
               className="group-hover:-translate-y-0.5 transition-transform"
               aria-hidden
             />
-          </Link>
+          </button>
 
           <a
             href={`mailto:${site.email}`}
