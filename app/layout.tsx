@@ -4,11 +4,12 @@ import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { CalendlyScript } from "@/components/layout/CalendlyScript";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://websujal.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.websujal.com";
 const TITLE = "Web Sujal | SaaS MVP & Performance Engineer";
 const DESCRIPTION =
   "Production-ready SaaS MVPs in 3–6 weeks. I partner with early-stage founders to ship scalable products with robust auth, payments, and dashboards.";
-const OG_IMAGE = "/og-image.jpg"; // 1200×630px – add to public/
+const OG_IMAGE_PATH = "/og-image.jpg";
+const OG_IMAGE_ABSOLUTE = `${SITE_URL}${OG_IMAGE_PATH}`;
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: OG_IMAGE,
+        url: OG_IMAGE_ABSOLUTE,
         width: 1200,
         height: 630,
         alt: "Web Sujal – SaaS MVP & Performance Engineer",
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: [OG_IMAGE],
+    images: [OG_IMAGE_ABSOLUTE],
     creator: "@web_sujal",
   },
 
