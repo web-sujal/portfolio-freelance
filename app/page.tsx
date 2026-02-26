@@ -18,11 +18,11 @@ const Home = () => {
 
       <main>
         <Hero />
-        <Testimonials />
+        {/* <Testimonials /> */}
 
         {/* once testimonials are added, move work up and services down */}
-        <Work />
         <Services />
+        <Work />
 
         <Process />
         <About />
