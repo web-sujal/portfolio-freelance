@@ -35,57 +35,30 @@ export const testimonials = {
   items: [
     {
       quote:
-        '"Alex delivered our MVP two weeks ahead of schedule. The code quality is top-notch and our users love the speed."',
-      name: "Jordan Smith",
-      role: "CEO at Fleetly",
-      initials: "JS",
+        "Sujal consistently showed strong ownership and clear architectural thinking. He stepped into complex parts of the codebase, cleaned them up, and made our systems more stable and easier to scale. What stood out most was how he thought ahead — anticipating edge cases and long-term implications instead of just solving the immediate task.",
+      name: "Shubham Goyal",
+      role: "Co-Founder & CTO at dm2buy",
+      initials: "SG",
       gradient: "from-indigo-500 to-purple-500",
       borderHover: "hover:border-indigo-500/40",
     },
     {
       quote:
-        '"The best technical partner we\'ve ever had. He understands business goals as much as technical architecture."',
-      name: "Maria Lopez",
-      role: "Founder of HealthSync",
-      initials: "ML",
+        "Sujal is an energetic software engineer. During our collaboration, he demonstrated strong architectural thinking and a sharp focus on execution. He understands that code is not the goal — business impact is. He is dependable, detail-oriented, and serious about building systems that last.",
+      name: "Faizan Sheikh",
+      role: "Founder & CEO at Quvor",
+      initials: "FS",
       gradient: "from-emerald-500 to-teal-500",
-      borderHover: "hover:border-purple-500/40",
+      borderHover: "hover:border-emerald-500/40",
     },
     {
       quote:
-        '"Clean architecture, robust Stripe integration, and a beautiful dashboard. Highly recommend for any SaaS founder."',
-      name: "David Tan",
-      role: "CTO at PayFlow",
-      initials: "DT",
-      gradient: "from-amber-500 to-red-500",
-      borderHover: "hover:border-blue-500/40",
-    },
-    {
-      quote:
-        '"Alex delivered our MVP two weeks ahead of schedule. The code quality is top-notch."',
-      name: "Jordan Smith",
-      role: "",
-      initials: "JS",
-      gradient: "from-indigo-500 to-purple-500",
-      borderHover: "",
-    },
-    {
-      quote:
-        '"The best technical partner we\'ve ever had. He understands business goals perfectly."',
-      name: "Maria Lopez",
-      role: "",
-      initials: "ML",
-      gradient: "from-emerald-500 to-teal-500",
-      borderHover: "",
-    },
-    {
-      quote:
-        '"Clean architecture and robust Stripe integration. Highly recommend Alex."',
-      name: "David Tan",
-      role: "",
-      initials: "DT",
-      gradient: "from-amber-500 to-red-500",
-      borderHover: "",
+        "Sujal was one of the most dependable engineers at dm2buy. He didn't just complete tasks — he understood the product, asked the right questions, and took real ownership of what he built. As a product manager, it's rare to work with someone who balances technical depth with a clear understanding of business goals the way he does.",
+      name: "Nakul Verma",
+      role: "Co-Founder at dm2buy",
+      initials: "NV",
+      gradient: "from-amber-500 to-orange-500",
+      borderHover: "hover:border-amber-500/40",
     },
   ],
 } as const;

@@ -7,7 +7,7 @@ import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import Process from "@/components/sections/Process";
 import Services from "@/components/sections/Services";
-// import { Testimonials } from "@/components/sections/Testimonials";
+import Testimonials from "@/components/sections/Testimonials";
 import Work from "@/components/sections/Work";
 
 const Home = () => {
@@ -18,11 +18,11 @@ const Home = () => {
 
       <main>
         <Hero />
-        {/* <Testimonials /> */}
+        <Testimonials />
 
         {/* once testimonials are added, move work up and services down */}
-        <Services />
         <Work />
+        <Services />
 
         <Process />
         <About />
