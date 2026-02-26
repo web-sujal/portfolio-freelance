@@ -4,7 +4,7 @@ import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { CalendlyScript } from "@/components/layout/CalendlyScript";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.websujal.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://websujal.com";
 const TITLE = "Web Sujal | SaaS MVP & Performance Engineer";
 const DESCRIPTION =
   "Production-ready SaaS MVPs in 3–6 weeks. I partner with early-stage founders to ship scalable products with robust auth, payments, and dashboards.";
