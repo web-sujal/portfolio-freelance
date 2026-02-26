@@ -11,6 +11,20 @@ const DESCRIPTION =
 const OG_IMAGE_PATH = "/og-image.jpg";
 const OG_IMAGE_ABSOLUTE = `${SITE_URL}${OG_IMAGE_PATH}`;
 
+const JSON_LD_PERSON = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sujal",
+  jobTitle: "SaaS MVP & Performance Engineer",
+  url: SITE_URL,
+  image: OG_IMAGE_ABSOLUTE,
+  description: DESCRIPTION,
+  sameAs: [
+    "https://www.linkedin.com/in/web-sujal",
+    "https://github.com/web-sujal",
+  ],
+};
+
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
   subsets: ["latin"],
@@ -108,6 +122,10 @@ const RootLayout = ({
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD_PERSON) }}
         />
       </head>
       <body
