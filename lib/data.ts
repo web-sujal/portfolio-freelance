@@ -64,24 +64,24 @@ export const testimonials = {
 } as const;
 
 export const caseStudies = [
-  {
-    id: "supersquad",
-    tag: "SAAS MVP",
-    year: "2026",
-    tagClass: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-    title: "Supersquad – Event Booking Marketplace",
-    description:
-      "Built a production-ready event marketplace from scratch with host dashboards, admin approval workflows, secure payment handling, and lead tracking — delivered in 4 weeks.",
-    challenge:
-      "Need a production‑ready MVP in under 5 weeks with complex payments and role‑based access.",
-    solution:
-      "Architected 15+ MongoDB schemas, 40+ REST APIs, idempotent Cashfree webhooks, and atomic booking updates.",
-    result:
-      "MVP delivered in 4 weeks. Reliable payment handling, host deactivation enforced in real‑time.",
-    tags: ["Next.js", "Node.js", "MongoDB", "Cashfree", "Azure VM"],
-    imageOnLeft: true,
-    glowClass: "from-blue-500/20 to-purple-500/20",
-  },
+  // {
+  //   id: "supersquad",
+  //   tag: "SAAS MVP",
+  //   year: "2026",
+  //   tagClass: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+  //   title: "Supersquad – Event Booking Marketplace",
+  //   description:
+  //     "Built a production-ready event marketplace from scratch with host dashboards, admin approval workflows, secure payment handling, and lead tracking — delivered in 4 weeks.",
+  //   challenge:
+  //     "Need a production‑ready MVP in under 5 weeks with complex payments and role‑based access.",
+  //   solution:
+  //     "Architected 15+ MongoDB schemas, 40+ REST APIs, idempotent Cashfree webhooks, and atomic booking updates.",
+  //   result:
+  //     "MVP delivered in 4 weeks. Reliable payment handling, host deactivation enforced in real‑time.",
+  //   tags: ["Next.js", "Node.js", "MongoDB", "Cashfree", "Azure VM"],
+  //   imageOnLeft: true,
+  //   glowClass: "from-blue-500/20 to-purple-500/20",
+  // },
   {
     id: "dm2buy",
     tag: "E‑COMMERCE",
