@@ -82,7 +82,7 @@ function PlaceholderPerformance() {
 }
 
 function PlaceholderForStudy(study: CaseStudy) {
-  if (study.id === "supersquad") return <PlaceholderMVP />;
+  // if (study.id === "supersquad") return <PlaceholderMVP />;
   if (study.id === "dm2buy") return <PlaceholderEcommerce />;
   return <PlaceholderPerformance />;
 }
